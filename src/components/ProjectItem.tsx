@@ -37,14 +37,12 @@ export default function ProjectItem({
   }, [id, index]);
 
   return (
-    <div
-      className={cn(
-        'group relative flex h-full flex-col text-secondary transition-all duration-300 ease-in-out lg:hover:text-primary',
-        { 'lg:text-primary': index === opened }
-      )}
-    >
+    <div className="group relative flex h-full flex-col text-secondary">
       <div
-        className="flex w-full cursor-pointer items-center justify-between lg:px-2"
+        className={cn(
+          'justify-betwee flex w-full cursor-pointer items-center transition-all duration-300 ease-out lg:group-hover:px-2 lg:group-hover:text-primary',
+          { 'text-secondary lg:px-2 lg:text-primary': index === opened }
+        )}
         onClick={onClick}
       >
         <p className="z-[1] w-full text-nowrap py-2">{project.title}</p>
@@ -88,16 +86,16 @@ export default function ProjectItem({
         >
           <p
             className={cn(
-              '-translate-y-full text-justify transition-all duration-500 ease-out group-hover:text-primary',
+              '-translate-y-full text-justify transition-all duration-300 ease-out',
               {
-                '-translate-y-0 group-hover:text-secondary lg:group-hover:text-primary':
+                '-translate-y-0 text-secondary lg:text-primary':
                   index === opened
               }
             )}
           >
             {project.description}
           </p>
-          <div className="mb-6 flex justify-end gap-x-8 lg:mb-12 lg:gap-x-16">
+          <div className="mb-6 flex justify-end gap-x-8 text-secondary lg:mb-12 lg:gap-x-16 lg:text-primary">
             {project.source && (
               <Link
                 className="group flex w-fit gap-x-2"
@@ -121,9 +119,9 @@ export default function ProjectItem({
       </div>
       <span
         className={cn(
-          'absolute top-0 h-full w-full origin-bottom scale-y-0 bg-secondary transition-transform duration-300 ease-out group-hover:origin-top lg:group-hover:scale-y-100',
+          'absolute top-0 h-full w-full origin-right scale-x-0 bg-secondary transition-transform duration-500 ease-out lg:group-hover:origin-left lg:group-hover:scale-x-100',
           {
-            'z-0 lg:scale-y-100': index === opened
+            'z-0 lg:scale-x-100': index === opened
           }
         )}
       ></span>
