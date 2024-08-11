@@ -17,10 +17,8 @@ export default function Home() {
         </span>
         <span className="flex -translate-y-[80%] translate-x-[15%] -rotate-90 items-center justify-end text-end sm:-translate-y-[80%] md:-translate-y-[20%] md:translate-x-[0%] md:rotate-0">
           <span className="rotate-12">K</span>H
-          <span className="translate-y-4 text-[28vw] sm:text-[17vw] md:text-[12vw]">
-            ◌
-          </span>
-          L<span className="rotate-12">A</span>F
+          <span className="rotate-12">O</span>L
+          <span className="rotate-12">A</span>F
         </span>
       </p>
     </section>

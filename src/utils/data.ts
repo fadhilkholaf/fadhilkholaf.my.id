@@ -21,15 +21,6 @@ export const projects: Project[] = [
     source: 'https://github.com/FadhilKholaf/UKL-Node-Backend-Ganjil'
   },
   {
-    imagePath: '3.png',
-    title: 'Simple Animation',
-    position: 'Frontend',
-    date: 'June, 2024',
-    description:
-      'A simple animation implemented on website for learning purpose, writen with Vite React JS',
-    preview: 'https://3.fadhilkholaf.my.id'
-  },
-  {
     imagePath: 'dot.png',
     title: 'PT. DOT Intern Test',
     position: 'Backend',
@@ -37,15 +28,6 @@ export const projects: Project[] = [
     description:
       'A backend program writen with Nest JS for applying to PT. DOT intern program',
     source: 'https://github.com/FadhilKholaf/dot-intern'
-  },
-  {
-    imagePath: 'hillaryours.png',
-    title: 'Hillaryours',
-    position: 'Frontend',
-    date: 'June, 2024',
-    description: 'A site for Hillary Abigail Fanbase, writen with Next JS',
-    preview: 'https://hillaryours.fadhilkholaf.my.id',
-    source: 'https://github.com/FadhilKholaf/hillaryours'
   },
   {
     imagePath: 'inagata.png',
@@ -66,6 +48,37 @@ export const projects: Project[] = [
       'A fullstack site writen using Next JS for SEFEST 2024 competition held by Telkom University Surabaya',
     preview: 'https://templarfeedforward.vercel.app',
     source: 'https://github.com/ahsanzizan/SEFEST24WEBDEV_Templar'
+  },
+  {
+    imagePath: 'style2.png',
+    title: 'PT. Inagata Intern Task 2',
+    position: 'Frontend',
+    date: 'August, 2024',
+    description:
+      'A frontend website writen using Next JS, slicing from inagata schools design style 2',
+    preview: 'https://style2.inagata.fadhilkholaf.my.id',
+    source: 'https://github.com/fadhilkholaf/inagata-intern-style2'
+  }
+];
+
+export const miniProject: Project[] = [
+  {
+    imagePath: 'hillaryours.png',
+    title: 'Hillaryours',
+    position: 'Frontend',
+    date: 'June, 2024',
+    description: 'A site for Hillary Abigail Fanbase, writen with Next JS',
+    preview: 'https://hillaryours.fadhilkholaf.my.id',
+    source: 'https://github.com/FadhilKholaf/hillaryours'
+  },
+  {
+    imagePath: '3.png',
+    title: 'Simple Animation',
+    position: 'Frontend',
+    date: 'June, 2024',
+    description:
+      'A simple animation implemented on website for learning purpose, writen with Vite React JS',
+    preview: 'https://3.fadhilkholaf.my.id'
   }
 ];
 
