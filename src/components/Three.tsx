@@ -1,14 +1,21 @@
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
-import { ASCII, EffectComposer } from '@react-three/postprocessing';
+import { EffectComposer, Pixelation } from '@react-three/postprocessing';
 import Profile from './models/Profile';
+import { useEffect, useState } from 'react';
 
 export default function Three() {
+  const [width, setWidth] = useState<number>(0);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
   return (
-    <section className="fixed left-0 top-0 -z-20 hidden h-screen w-screen lg:block">
+    <section className="fixed left-0 top-0 -z-20 h-screen w-screen">
       <Canvas performance={{ max: 0.1 }}>
         <PerspectiveCamera makeDefault position={[0, 1, -5]} />
-        <ambientLight intensity={20} />
+        <ambientLight intensity={5} />
         <OrbitControls
           autoRotate
           autoRotateSpeed={5}
@@ -17,9 +24,9 @@ export default function Three() {
           enableRotate={false}
           enableZoom={false}
         />
-        <Profile scale={5} position={[0,-1,0]} />
+        <Profile scale={width > 640 ? 5 : 3} position={[0, -1, 0]} />
         <EffectComposer>
-          <ASCII characters=" trisnamahasiwi" color="#F5F5F5" cellSize={7.5} />
+          <Pixelation granularity={30} />
         </EffectComposer>
       </Canvas>
     </section>
