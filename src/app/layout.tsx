@@ -6,6 +6,7 @@ import LocomotiveScrollProvider from '@/components/providers/LocomotiveScrollPro
 import { cn } from '@/utils/cn';
 import './globals.css';
 import ScrambleTextProvider from '@/components/providers/ScrambleTextProvider';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const courierPrime = Courier_Prime({
   weight: '400',
@@ -31,6 +32,7 @@ export default function RootLayout({
           <ScrambleTextProvider>{children}</ScrambleTextProvider>
           <Analytics />
         </LocomotiveScrollProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
