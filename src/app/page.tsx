@@ -12,14 +12,17 @@ import Cursor from '@/components/Cursor';
 import { useEffect, useState } from 'react';
 import { cn } from '@/utils/cn';
 import { StarsBackground } from '@/components/ui/StarsBackground';
+import OlivierLaroseAnimation from '@/components/OlivierLaroseAnimation';
 
 export default function Page() {
   const [loading, setLoading] = useState<boolean>(true);
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 500);
   }, []);
+
   return (
     <main className={cn({ fixed: loading })}>
       <Cursor />
@@ -33,8 +36,9 @@ export default function Page() {
           <StarsBackground />
         </section>
         <Three />
+        {/* <OlivierLaroseAnimation /> */}
         <Projects />
-        <Credits />
+        {/* <Credits /> */}
       </main>
     </main>
   );
