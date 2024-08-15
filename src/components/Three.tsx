@@ -18,13 +18,15 @@ export default function Three() {
         <ambientLight intensity={5} />
         <OrbitControls
           autoRotate
-          autoRotateSpeed={10}
+          autoRotateSpeed={width > 640 ? 5 : 10}
+          enableDamping={false}
+          enableRotate={false}
           enablePan={false}
           enableZoom={false}
         />
         <Profile scale={width > 640 ? 5 : 3} position={[0, -1, 0]} />
         <EffectComposer>
-          <Pixelation granularity={30} />
+          <Pixelation granularity={20} />
         </EffectComposer>
       </Canvas>
     </section>
