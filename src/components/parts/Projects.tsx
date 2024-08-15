@@ -4,7 +4,6 @@ import { miniProject, projects } from '@/utils/data';
 import ProjectItem from '../ProjectItem';
 
 import '@/app/globals.css';
-import Link from 'next/link';
 
 export default function Projects() {
   const [openProject, setOpenProject] = useState<number | null>(null);

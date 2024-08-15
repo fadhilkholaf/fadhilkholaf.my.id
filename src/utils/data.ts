@@ -137,6 +137,11 @@ export const resource: Credit[] = [
     href: 'https://ui.aceternity.com'
   },
   {
+    name: 'Meshy',
+    category: '3D',
+    href: 'https://www.meshy.ai'
+  },
+  {
     name: 'React Three Fiber',
     category: '3D',
     href: 'https://docs.pmnd.rs/react-three-fiber'
