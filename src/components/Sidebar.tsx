@@ -38,13 +38,17 @@ export default function Sidebar() {
         text="CV"
         className="mb-5 delay-[0.3s]"
       />
-      <SidebarItem text="Home" scrollTo="#home" className="mb-12 delay-300" />
+      <SidebarItem
+        text="Home"
+        scrollTo="#home"
+        className="mb-12 delay-[0.2s]"
+      />
       <SidebarItem
         text="Projects"
         scrollTo="#projects"
-        className="mb-16 delay-200"
+        className="mb-16 delay-[0.1s]"
       />
-      <SidebarItem text="Credits" scrollTo="#credits" />
+      {/* <SidebarItem text="Credits" scrollTo="#credits" /> */}
       <p className="fixed bottom-12 -rotate-90 text-nowrap font-semibold text-accent">
         {progress === 100 || !loading ? 'Scroll' : 'Loading'}
         <span className="animate-pulse">{' - />'}</span>
