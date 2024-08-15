@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-fit w-screen bg-primary py-12 pl-12 pr-4 text-secondary md:pr-10"
+      className="min-h-screen w-screen bg-primary py-12 pl-12 pr-4 text-secondary md:pr-10"
       data-scroll
       data-scroll-event-progress="progressEvent"
     >
