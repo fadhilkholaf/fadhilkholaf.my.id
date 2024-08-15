@@ -18,10 +18,8 @@ export default function Three() {
         <ambientLight intensity={5} />
         <OrbitControls
           autoRotate
-          autoRotateSpeed={5}
-          enableDamping={false}
+          autoRotateSpeed={10}
           enablePan={false}
-          enableRotate={false}
           enableZoom={false}
         />
         <Profile scale={width > 640 ? 5 : 3} position={[0, -1, 0]} />
