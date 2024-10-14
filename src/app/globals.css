@@ -2,21 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.light {
+  --background: 102, 102, 102;
+  --foreground: 245, 245, 245;
+
+  color: rgba(var(--background));
+  background: rgba(var(--foreground));
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: 245, 245, 245;
+  --foreground: 102, 102, 102;
+
+  color: rgba(var(--background));
+  background: rgba(var(--foreground));
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,4 +26,27 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(var(--background));
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(var(--background));
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--foreground));
+}
+
+::-moz-selection {
+  color: rgba(var(--foreground));
+  background: rgba(var(--background));
+}
+
+::selection {
+  color: rgba(var(--foreground));
+  background: rgba(var(--background));
 }
