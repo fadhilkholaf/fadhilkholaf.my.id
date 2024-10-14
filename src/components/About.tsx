@@ -3,8 +3,8 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className="flex flex-col items-center py-8">
-      <article className="w-full max-w-[1024px] p-4 text-5xl flex flex-col gap-y-16 font-medium">
-        <p className="flex items-center gap-4 flex-wrap justify-between">
+      <article className="w-full max-w-[1024px] p-4 text-3xl sm:text-5xl flex flex-col gap-y-16 font-medium">
+        <p className="flex items-center gap-2 sm:gap-4 flex-wrap">
           <span>Hey,</span>
           <span>I’m</span>
           <span>Muhammad</span>
@@ -20,7 +20,7 @@ const About = () => {
           </span>
           <span>Kholaf!</span>
         </p>
-        <p className="flex items-center gap-4 flex-wrap justify-between">
+        <p className="flex items-center gap-2 sm:gap-4 flex-wrap">
           <span>I’m</span>
           <span>a</span>
           <span>frontend</span>

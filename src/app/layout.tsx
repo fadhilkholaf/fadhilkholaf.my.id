@@ -24,7 +24,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Cursor />
           <Image
-            className="h-screen w-full fixed object-cover opacity-25 pointer-events-none z-[998]"
+            className="h-screen w-full fixed object-cover opacity-50 pointer-events-none z-[998]"
             src="/images/grain.svg"
             alt="Grain Filter"
             loading="lazy"
