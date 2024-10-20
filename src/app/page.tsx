@@ -70,7 +70,7 @@ const Home = () => {
         <Landing />
       </section>
       <About />
-      <Project />
+      {/* <Project /> */}
       <Contact />
       <section className="h-full" ref={last}>
         <Landing />
