@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Landing from "@/components/Landing";
-import Project from "@/components/Project";
+// import Project from "@/components/Project";
 
 const Home = () => {
   const last = useRef<HTMLElement>(null);
