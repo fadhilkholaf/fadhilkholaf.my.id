@@ -1,14 +1,21 @@
 "use client";
 
+import { DetailedHTMLProps, forwardRef, HTMLAttributes } from "react";
 import Image from "next/image";
 
 import { useTheme } from "./providers/ThemeProvider";
 
-const Landing = () => {
+const Landing = forwardRef<
+  HTMLElement,
+  DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>
+>(({ ...props }, ref) => {
   const { theme, toggleTheme } = useTheme();
-
   return (
-    <section className="h-screen w-full relative flex justify-between items-center flex-col">
+    <section
+      ref={ref}
+      className="h-screen w-full relative flex justify-between items-center flex-col"
+      {...props}
+    >
       <Image
         className="h-fit w-full object-fill mix-blend-exclusion p-4 max-w-[1024px]"
         src="/images/fadhil.svg"
@@ -47,6 +54,6 @@ const Landing = () => {
       </video>
     </section>
   );
-};
+});
 
 export default Landing;

@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Landing from "@/components/Landing";
+import Trash from "@/components/Trash";
 // import Project from "@/components/Project";
 
 const Home = () => {
@@ -66,15 +67,12 @@ const Home = () => {
   return (
     <main className="h-full">
       <section className="h-[1px]" ref={triggerStart}></section>
-      <section className="h-full" ref={start}>
-        <Landing />
-      </section>
+      <Landing ref={start} />
       <About />
       {/* <Project /> */}
+      <Trash />
       <Contact />
-      <section className="h-full" ref={last}>
-        <Landing />
-      </section>
+      <Landing ref={last} />
       <section className="h-[1px]" ref={triggerLast}></section>
     </main>
   );
