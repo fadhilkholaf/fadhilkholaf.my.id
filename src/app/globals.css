@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 .light {
-  --background: 102, 102, 102;
-  --foreground: 245, 245, 245;
-
+  --background: 123, 0, 5;
+  --foreground: 210, 180, 139;
+  
   color: rgba(var(--background));
   background: rgba(var(--foreground));
 }
 
 .dark {
-  --background: 245, 245, 245;
-  --foreground: 102, 102, 102;
+  --background: 210, 180, 139;
+  --foreground: 123, 0, 5;
 
   color: rgba(var(--background));
   background: rgba(var(--foreground));
