@@ -56,4 +56,6 @@ const Landing = forwardRef<
   );
 });
 
+Landing.displayName = "Landing";
+
 export default Landing;
