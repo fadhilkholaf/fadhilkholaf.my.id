@@ -29,7 +29,7 @@ const Cursor = () => {
 
   return (
     <video
-      className="h-16 w-16 object-cover fixed -translate-x-8 -translate-y-8 transition-all ease-out mix-blend-overlay contrast-200 z-[999] pointer-events-none"
+      className="h-16 w-16 object-cover fixed -translate-x-8 -translate-y-8 transition-all ease-out mix-blend-exclusion contrast-200 z-[999] pointer-events-none"
       style={{ top: cursor.y, left: cursor.x }}
       autoPlay
       loop
